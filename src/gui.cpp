@@ -9,7 +9,7 @@
 #include <backends/imgui_impl_glfw.h>
 #include <GLFW/glfw3.h>
 #include <imgui_internal.h>
-#include <imterm/terminal.hpp>
+#include "imterm/terminal.hpp"
 
 #include "commands/Command.hpp"
 
@@ -57,7 +57,7 @@ void createImGuiWindow() {
                            ImGuiWindowFlags_NoNavFocus |
                            ImGuiWindowFlags_NoDocking |
                            ImGuiWindowFlags_NoSavedSettings);
-    terminal_log.set_size(ImVec2((float)g_width, (float)g_height));
+    terminal_log.set_size(ImVec2((float)g_width, (float)g_height - 20));
     terminal_log.show();
 }
 

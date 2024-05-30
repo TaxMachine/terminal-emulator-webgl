@@ -5,8 +5,8 @@
 #ifndef TERMINAL_ANIMATION_COMMAND_HPP
 #define TERMINAL_ANIMATION_COMMAND_HPP
 
-#include <imterm/terminal.hpp>
-#include <imterm/terminal_helpers.hpp>
+#include "../imterm/terminal.hpp"
+#include "../imterm/terminal_helpers.hpp"
 
 class Command : public ImTerm::basic_terminal_helper<Command, void> {
 public:
