@@ -66,7 +66,7 @@ void GUI::loop() {
     glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, GLFW_TRUE);
     if (!glfwInit())
         return;
-    window = glfwCreateWindow(900, 700, "terminal emulator", nullptr, nullptr);
+    window = glfwCreateWindow(600, 600, "terminal emulator", nullptr, nullptr);
     if (window == nullptr)
         return;
     glfwMakeContextCurrent(window);
