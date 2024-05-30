@@ -1,0 +1,9 @@
+[submodule "libs/glfw"]
+	path = libs/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "libs/stb"]
+	path = libs/stb
+	url = https://github.com/nothings/stb.git
+[submodule "libs/ImTerm"]
+	path = libs/ImTerm
+	url = https://github.com/Organic-Code/ImTerm.git
