@@ -89,8 +89,13 @@ namespace ImTerm {
 
 		using terminal_helper_is_valid = details::assert_wellformed<TerminalHelper, command_type_cref>;
 
-		inline static const std::vector<config_panels> DEFAULT_ORDER = {config_panels::clearbutton,
-				  config_panels::autoscroll, config_panels::autowrap, config_panels::long_filter, config_panels::loglevel};
+		inline static const std::vector<config_panels> DEFAULT_ORDER = {
+                config_panels::clearbutton,
+                config_panels::autoscroll,
+                config_panels::autowrap,
+                config_panels::long_filter,
+                config_panels::loglevel
+        };
 
 		// You shall call this constructor you used a non void value_type
 		template <typename T = value_type, typename = std::enable_if_t<!std::is_same_v<T, misc::details::structured_void>>>

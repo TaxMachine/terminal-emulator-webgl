@@ -62,13 +62,13 @@ void createImGuiWindow() {
 }
 
 void GUI::loop() {
-    glfwSetErrorCallback(glfw_error_callback);
-    glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, GLFW_TRUE);
     if (!glfwInit())
         return;
+    glfwSetErrorCallback(glfw_error_callback);
     window = glfwCreateWindow(600, 600, "terminal emulator", nullptr, nullptr);
     if (window == nullptr)
         return;
+    glfwWindowHint(GLFW_TRANSPARENT_FRAMEBUFFER, GLFW_TRUE);
     glfwMakeContextCurrent(window);
     glfwSwapInterval(1);
     IMGUI_CHECKVERSION();
